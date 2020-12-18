@@ -25,9 +25,16 @@ $(document).ready(function(){
     });
 	$(".button_1").click(function(){
         
-        $('html,body').animate({scrollTop:4600},1000);
-      
+          
+          $(".show").css('display','block');
+          $("video").trigger('play'); 
+          $(".button_1").css('z-index','-1');
     });
+	$(".close").click(function(){
+          $(".show").css('display','none');
+          $(".button_1").css('z-index','99999');
+    });
+	
 		
 		//scroll window
 		$(window).scroll(function() {    
@@ -101,6 +108,25 @@ $(document).ready(function(){
         $(".connect").removeClass("active");
         $(".connect .container").removeClass("active");
         $(".connect .container .box").removeClass("active");
+        
+    }
+    
+    
+});
+		$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >=  4900) {
+        $(".box_b").addClass("active");
+        $(".box_about").addClass("active");
+        $(".box_about:nth-child(3)").addClass("active");
+        
+        
+    } 
+    else {
+        $(".box_b").removeClass("active");
+        $(".box_about").removeClass("active");
+        $(".box_about:nth-child(3)").removeClass("active");
         
     }
     
