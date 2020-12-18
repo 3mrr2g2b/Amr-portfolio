@@ -7,3 +7,8 @@ JAVASCRIPT<br>
 JQUERY<br>
 Bootstrap<br>
 
+**The website is contains Animation.
+**website ic contains typewritter jquery.
+
+link of home page....
+https://3mrr2g2b.github.io/codehub/
