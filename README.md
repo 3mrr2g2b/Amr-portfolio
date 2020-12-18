@@ -5,10 +5,11 @@ HTML<br>
 Pure CSS<br>
 JAVASCRIPT<br>
 JQUERY<br>
-Bootstrap<br>
-
+Bootstrap
+<br>
+<br>
 **The website is contains Animation.
-**website ic contains typewritter jquery.
+**website ic contains typewritter jquery.<br>
 
 link of home page....
 https://3mrr2g2b.github.io/codehub/
