@@ -8,7 +8,7 @@ JQUERY<br>
 Bootstrap
 <br>
 <br>
-**The website is contains Animation.
+**The website is contains Animation.<br>
 **website ic contains typewritter jquery.<br>
 
 link of home page....
