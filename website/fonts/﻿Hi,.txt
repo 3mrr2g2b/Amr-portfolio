@@ -1,0 +1,6 @@
+﻿Hi,
+
+Version: 5.3
+FingerPrint: TECNO/H8022/TECNO-F3:7.0/NRD90M/B-EG-181026V59:userdebug/release-keys
+
+Your problem here (in english).
