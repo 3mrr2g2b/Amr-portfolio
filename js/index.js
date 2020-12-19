@@ -23,6 +23,11 @@ $(document).ready(function(){
         $('html,body').animate({scrollTop:4600},1000);
       
     });
+	$(".ch_4").click(function(){
+        
+        $('html,body').animate({scrollTop:5050},1000);
+      
+    });
 	$(".button_1").click(function(){
         
           
@@ -51,6 +56,7 @@ $(document).ready(function(){
     
     
 });
+
 		$(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
@@ -65,6 +71,7 @@ $(document).ready(function(){
     
     
 });
+
 		$(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
@@ -79,6 +86,7 @@ $(document).ready(function(){
     
     
 });
+
 		$(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
@@ -93,6 +101,92 @@ $(document).ready(function(){
     
     
 });
+
+		$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 1100 ) {
+        
+        $(".box_work:nth-child(1)").addClass("move_box");
+    } 
+    else {
+        
+        $(".box_work:nth-child(1)").removeClass("move_box");
+    }
+    
+    
+});
+		$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 1800 ) {
+        
+        $(".box_work:nth-child(2)").addClass("move_box");
+    } 
+    else {
+        
+        $(".box_work:nth-child(2)").removeClass("move_box");
+    }
+    
+    
+});
+		$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 2500 ) {
+        
+        $(".box_work:nth-child(3)").addClass("move_box");
+    } 
+    else {
+        
+        $(".box_work:nth-child(3)").removeClass("move_box");
+    }
+    
+    
+});
+		$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 3000 ) {
+        
+        $(".box_work:nth-child(4)").addClass("move_box");
+    } 
+    else {
+        
+        $(".box_work:nth-child(4)").removeClass("move_box");
+    }
+    
+    
+});
+		$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 3500 ) {
+        
+        $(".box_work:nth-child(5)").addClass("move_box");
+    } 
+    else {
+        
+        $(".box_work:nth-child(5)").removeClass("move_box");
+    }
+    
+    
+});
+		$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 3800 ) {
+        
+        $(".box_work:nth-child(6)").addClass("move_box");
+    } 
+    else {
+        
+        $(".box_work:nth-child(6)").removeClass("move_box");
+    }
+    
+    
+});
+		
 		$(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
@@ -113,6 +207,7 @@ $(document).ready(function(){
     
     
 });
+
 		$(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
