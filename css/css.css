@@ -224,13 +224,13 @@ h1{
         text-align: center;
         display: inline-block;
     }
-.my_works .box{
+.my_works .box_work{
         width: 90%;
         margin: 50px auto;
         background: #fff;
         box-shadow: 3px 3px 30px #b1b1b1;
     }
-.my_works .box img{
+.my_works .box_work img{
         width: 100%;
         height: 100%;
         margin-top: -10px;
@@ -250,13 +250,13 @@ h1{
         transform: translateY(0px);
         transition:all 0.5s;
     }*/
-.my_works .box:hover i:nth-child(2){
+.my_works .box_work:hover i:nth-child(2){
         transition-delay: 0.2s;
     }
-.my_works .box:hover i:nth-child(3){
+.my_works .box_work:hover i:nth-child(3){
         transition-delay: 0.3s;
     }
-.my_works .box:hover i:nth-child(4){
+.my_works .box_work:hover i:nth-child(4){
         transition-delay: 0.4s;
     }
  
@@ -575,30 +575,105 @@ h1{
         width: 100%;
         height: 100%;
         text-align: center;
-        display: inline;
+        display: block;
         overflow: hidden;
     }
-    .my_works .box{
+    .my_works .box_work{
         width: 90%;
         padding: 10px 0;
         margin: 50px auto;
         box-shadow: 3px 5px 30px #b3b3b3;
-        
+        transform: translateX(-120%);
+        transition: 0.5s;
     }
-    .my_works .box .div_img{
+    .my_works .box_work{
+        width: 90%;
+        padding: 10px 0;
+        margin: 50px auto;
+        box-shadow: 3px 5px 30px #b3b3b3;
+        transform: translateX(-120%) rotate(30deg);
+        transition: 0.5s;
+    }
+    .my_works .box_work:nth-child(1){
+        
+        transform: translateX(-120%);
+        transition: 0.5s;
+    }
+    .my_works .box_work:nth-child(2){
+        
+        transform: translateX(120%);
+        transition: 0.5s;
+    }
+    .my_works .box_work:nth-child(3){
+        
+        transform: translateX(120%);
+        transition: 0.5s;
+    }
+    .my_works .box_work:nth-child(4){
+        
+        transform: translateX(-120%);
+        transition: 0.5s;
+    }
+    .my_works .box_work:nth-child(5){
+        
+        transform: translateX(-120%);
+        transition: 0.5s;
+    }
+    .my_works .box_work:nth-child(6){
+        
+        transform: translateX(120%);
+        transition: 0.5s;
+    }
+    .my_works .box_work.move_box{
+        
+        transform: translateX(0%) rotate(0deg);
+        transition: 0.5s;
+    }
+    /* active move box for works*/
+    .my_works .box_work.move_box:nth-child(2){
+        
+        transform: translateX(0%);
+        transition: 0.5s;
+    }
+    .my_works .box_work.move_box:nth-child(3){
+        
+        transform: translateX(0%);
+        transition: 0.5s;
+    }
+    .my_works .box_work.move_box:nth-child(4){
+        
+        transform: translateX(0%);
+        transition: 0.5s;
+    }
+    .my_works .box_work.move_box:nth-child(5){
+        
+        transform: translateX(0%);
+        transition: 0.5s;
+    }
+    .my_works .box_work.move_box:nth-child(6){
+        
+        transform: translateX(0%);
+        transition: 0.5s;
+    }
+    
+    .my_works .box_work.move_box{
+        
+        transform: translateX(0%) rotate(0deg);
+    }
+    .my_works .box_work .div_img{
         width: 100%;
         position: relative;
         overflow: hidden;
         transition: 0.5s;
         margin-top: -10px;
     }
-    .my_works .box .div_img img{
+    .my_works .box_work .div_img img{
         width: 100%;
         height: 100%;
         margin-top: -10px;
         
     }
-    .my_works .box .div_img:before {
+    .my_works .box_work .div_img:before {
         content: '';
         width: 100%;
         height: 100%;
@@ -618,31 +693,31 @@ h1{
         font-family: b;
         opacity: 0;
     }
-    .my_works .box:nth-child(1) .div_img:before {
+    .my_works .box_work:nth-child(1) .div_img:before {
         content: 'Hover Toggle animation';
     }
-    .my_works .box:nth-child(2) .div_img:before {
+    .my_works .box_work:nth-child(2) .div_img:before {
         content: 'Creative Phronic Card';
     }
-    .my_works .box:nth-child(3) .div_img:before {
+    .my_works .box_work:nth-child(3) .div_img:before {
         content: 'Animation Button Shadow';
     }
-    .my_works .box:nth-child(4) .div_img:before {
+    .my_works .box_work:nth-child(4) .div_img:before {
         content: 'Creative Loader Page';
     }
-    .my_works .box:nth-child(5) .div_img:before {
+    .my_works .box_work:nth-child(5) .div_img:before {
         content: '404 NotFound Page';
         color:#b7b7b7;
     }
-    .my_works .box:nth-child(6) .div_img:before {
+    .my_works .box_work:nth-child(6) .div_img:before {
         content: 'Circle Loader Page';
         color: #c3c3c3;
     }
-    .my_works .box .div_img:hover:before{
+    .my_works .box_work .div_img:hover:before{
         transform: translateX(0%);
         opacity:1;
     }
-    .my_works .box .div_img:hover img{
+    .my_works .box_work .div_img:hover img{
         filter: grayscale(100%);
         transition: 0.5s;
     }
