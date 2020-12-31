@@ -17,7 +17,7 @@
         <!--Toggle Icon-->
         <div class="icon_logo">
             
-        <h1 class="logo">Code Hub</h1>
+        <h1 class="logo">Code <font>Hub</font></h1>
         <div class="toggle">
             <span></span>
             <span></span>
@@ -72,7 +72,6 @@
          </section>
          <div class="show">
              <video src='imgs/vid.mp4' preload="none" ></video>
-             <video src='imgs/vid.mp4' preload="none" ></video>
              <button type="submit" class="close"><i class="fas fa-times"></i></button>
          </div>
              <!--section of works-->
@@ -86,9 +85,15 @@
                 
             </div>
                <div class="thumb">
-                <i class="far fa-eye"></i>
-                <i class="fab fa-codepen"></i>
-                <i class="fas fa-code"></i>
+                   <div class="fath">
+                        <i class="far fa-eye"></i>
+                   </div>
+                   <div class="fath">
+                        <i class="fab fa-codepen"></i>
+                   </div>
+                   <div class="fath">
+                        <i class="fas fa-code"></i>
+                   </div>
             </div>
         </div>
         <div class="box_work">
@@ -149,36 +154,38 @@
     </div>
     <section class="connect">
         <div class="container">
-           <div class="box">
+     
+           <div class="box" id="box1">
                <i class="far fa-user"></i>
                <input type="email" name="email" id="email" placeholder="email@example.com"/>
            </div> 
-           <div class="box">
+           <div class="box" id="box2">
                <i class="fas fa-lock"></i>
                <input type="password" name="password" id="password" placeholder="••••••••••••••••••••••"/>
            </div> 
-           <div class="box">
+           <div class="box" id="box3">
                <i class="far fa-envelope"></i>
-               <textarea class="texterea" id='texterea' rows="8" cols="40" placeholder="Enter Message"></textarea>
+               <textarea class="texterea" name='message' id='texterea' rows="8" cols="40" placeholder="Enter Message"></textarea>
            </div> 
-           <div class="box">
+           <div class="box" >
                
            <button type="submit">Send</button>
            </div>
-        </div>
+      </div>
     </section>
     
+    <h1>About Me</h1>
     <section class="about">
         <div class="about_me">
             <div class="box_b">
         <span></span>
-            <div class="box_about">
+            <div class="box_about" id="about_con">
                 <i class="fas fa-user-tie"> : Amr Ragab Ali Mohamed</i>
             </div>
             </div>
             <div class="box_b">
         <span></span>
-            <div class="box_about">
+            <div class="box_about" >
                 <i class="fab fa-github"> : @3mrr2g2b</i>
             </div>
             </div>
@@ -202,6 +209,23 @@
             </div>
             
         </div>
+    </section>
+    <section class="main_pop_up">
+    <div class="pop_up">
+        <span><i class="fas fa-times"></i></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <h1 class="profile">About Me</h1>
+        <p> I'm a hardworking individual who has<br> 3 years of working experience under my belt.<br>  I'm and aspire to be a Head Technician within <br>the next 3 years. I would like to attain <br>the said position because to help your company grow.<br>I am willing to show the company that I have <br>what it takes to thrive and succeed in this company </p>
+    </div>
+    <ul class="popup_list">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
     </section>
     </body>
 </html>
