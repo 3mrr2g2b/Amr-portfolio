@@ -39,6 +39,14 @@ $(document).ready(function(){
           $(".show").css('display','none');
           $(".button_1").css('z-index','99999');
     });
+	$("#about_con").click(function(){
+          //$('.main_pop_up').animate({display:block},1000);
+         $(".main_pop_up").css('display','block');
+          $(".pop_up span:nth-child(1)").addClass("active");
+    });
+	$("span:nth-child(1)").click(function(){
+          $(".main_pop_up").css('display','none');
+    });
 	
 		
 		//scroll window
@@ -237,3 +245,4 @@ $(document).ready(function(){
         blinkSpeed : 800
     });
 });
+
