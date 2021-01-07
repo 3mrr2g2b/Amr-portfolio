@@ -239,7 +239,7 @@ $(document).ready(function(){
 		//type writter code
 		$(".typewritter").typewriter({
         prefix : "",
-        text : [" I'm Web Designer", "I'm Web Developer", "I'm Grafic Designer","Let's See The Future With Me And Catch Your Dreem. ",'We help you to learn more and more And become Awesome In Many Languages.'],
+        text : [" I'm Web Designer", "I'm Web Developer", "I'm Grafic Designer","Let's See The Future With Me And Catch Your Dreem. ",'We help you to learn more and more And become Awesome In Many Languages.','The rhythme is yours.'],
         typeDelay : 100,
         waitingTime : 1500,
         blinkSpeed : 800
