@@ -160,6 +160,15 @@ body.active{
         position: relative;
         height: 250px;
     }
+.sec_3 .box span{
+     position:absolute;
+    background: #3C5795;
+    transform: translate(-50%,-50%);
+    animation: animate 1s linear infinite;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.5;
+ }
 .sec_3 .box:before{
     content: '';
         transition: 0.4s;
@@ -229,6 +238,7 @@ h1{
         display: block;
     }
 .my_works .box_work{
+    position: relative;
         width: 90%;
         margin: 50px auto;
         background: #fff;
@@ -263,7 +273,7 @@ h1{
 .my_works .box_work:hover i:nth-child(4){
         transition-delay: 0.4s;
     }
- 
+
  .connect{
      width:100%;
      height: 800px;
@@ -1196,6 +1206,10 @@ h1{
       .connect.active .container:after{
        transform: translate(30%,10%);
     }
+    ::placeholder{
+        color:rgba(0,0,0,0.5);
+        
+    }
     
     .about{
         width: 100%;
@@ -1292,6 +1306,9 @@ h1{
     .about .about_me .box_b .box_about.active:nth-child(5):before{
          transition: 1.7s;
     }
+    .about .about_me .box_b .box_about.active:nth-child(6):before{
+         transition: 2s;
+    }
     .about .about_me .box_b .box_about:after{
       content: '';
       position: absolute;
@@ -1322,6 +1339,10 @@ h1{
     }
     .about .about_me .box_b:nth-child(5) .box_about.active:after{
       transition:1.4s;
+      
+    }
+    .about .about_me .box_b:nth-child(6) .box_about.active:after{
+      transition:1.7s;
       
     }
     .about .about_me .box_b:nth-child(1) .box_about:after{
@@ -1513,6 +1534,19 @@ h1{
         height: 30px;
         left: 50%;
     }
+    
+    .my_sign{
+        width:100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .my_sign p{
+        text-align: center;
+        font-weight: bold;
+        color: #d4d4d4;
+    }
+    
 }
 
 @keyframes trans{
@@ -1539,5 +1573,16 @@ h1{
         bottom: 100%;
         border-radius: 10px;
         transform: rotate(90deg);
+    }
+}
+@keyframes animate{
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    100%{
+        width: 700px;
+        height: 700px;
+        opacity: 0;
     }
 }
