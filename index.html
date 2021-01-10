@@ -89,7 +89,7 @@
                         <i class="far fa-eye"></i>
                    </div>
                    <div class="fath">
-                        <i class="fab fa-codepen"></i>
+                           <a href="https://codepen.io/3mr/pen/bGwjGXE"><i class="fab fa-codepen"></i></a>
                    </div>
                    <div class="fath">
                         <i class="fas fa-code"></i>
@@ -102,7 +102,7 @@
             </div>
                <div class="thumb">
                 <i class="far fa-eye"></i>
-                <i class="fab fa-codepen"></i>
+                <a href="https://codepen.io/3mr/pen/bGwjGXE"><i class="fab fa-codepen"></i></a>
                 <i class="fas fa-code"></i>
             </div>
         </div>
@@ -186,6 +186,12 @@
             <div class="box_b">
         <span></span>
             <div class="box_about" >
+                <i class="fab fa-medapps"> : Skilles</i>
+            </div>
+            </div>
+            <div class="box_b">
+        <span></span>
+            <div class="box_about" >
                 <i class="fab fa-github"> : @3mrr2g2b</i>
             </div>
             </div>
@@ -229,5 +235,29 @@
         <li></li>
     </ul>
     </section>
+    <section class="my_sign">
+        <p><i class="far fa-copyright"></i> Amr Ragab 2021</p>
+    </section>
+    
+    
+    <script type="text/javascript" charset="utf-8">
+        const div = document.querySelectorAll('.box');
+        div.forEach(btn => {
+            btn.addEventListener('click',function(e){
+                let x = e.clientX - e.target.offsetLeft;
+                let y = e.clientY - e.target.offsetTop;
+                
+                let ripple = document.createElement('span');
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                this.appendChild(ripple);
+                
+                setTimeout(() =>{
+                    ripple.remove();
+                },1000);
+            });
+        });
+    </script>
+    
     </body>
 </html>
