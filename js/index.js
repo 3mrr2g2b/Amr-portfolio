@@ -1,6 +1,8 @@
 $(document).ready(function(){
     
-    //toggle click 
+    //window loading...
+    
+    //toggle click....
     $('.toggle').click(function(){
 			$('.toggle').toggleClass('active');
 			$('.back').toggleClass('active');
@@ -41,13 +43,29 @@ $(document).ready(function(){
     });
 	$("#about_con").click(function(){
           //$('.main_pop_up').animate({display:block},1000);
-         $(".main_pop_up").css('display','block');
+          $(".main_pop_up").css('display','block');
+         
+         
           $(".pop_up span:nth-child(1)").addClass("active");
     });
 	$("span:nth-child(1)").click(function(){
           $(".main_pop_up").css('display','none');
+            
     });
-	
+	$('#skilles').click(function(){
+	    $('.skilles').css('display','block');
+	    $(".html").addClass("anim");
+        $(".css").addClass("anim");
+        $(".js").addClass("anim");
+        $(".jquery").addClass("anim");
+        $(".react").addClass("anim");
+        $(".json").addClass("anim");
+        $(".php").addClass("anim");
+        $(".java").addClass("anim");
+	 });
+	 $(".close_skilles").click(function(){
+	     $(".skilles").css("display","none");
+	 });
 		
 		//scroll window
 		$(window).scroll(function() {    
@@ -239,7 +257,7 @@ $(document).ready(function(){
 		//type writter code
 		$(".typewritter").typewriter({
         prefix : "",
-        text : [" I'm Web Designer", "I'm Web Developer", "I'm Grafic Designer","Let's See The Future With Me And Catch Your Dreem. ",'We help you to learn more and more And become Awesome In Many Languages.','The rhythme is yours.'],
+        text : ["I'm Here To Speak For All Generations To Come"," I'm Web Designer", "I'm Web Developer", "I'm Grafic Designer","Let's See The Future With Me And Catch Your Dreem. ",'We help you to learn more and more And become Awesome In Many Languages.','The rhythme is yours.'],
         typeDelay : 100,
         waitingTime : 1500,
         blinkSpeed : 800
