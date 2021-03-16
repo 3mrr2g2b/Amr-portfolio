@@ -19,6 +19,71 @@ body.active{
     background: #262626;
     color: #6c6c6c;
 }
+
+.container-circle{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+.circle{
+    border-left: 5px solid #3C5795;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    animation: anime 1.2s linear infinite;
+}
+.circle:nth-child(1){
+    width: 100px;
+    height: 100px;
+    
+}
+.circle:nth-child(2){
+    width: 70px;
+    height: 70px;
+    animation-delay: 1s;
+    animation: anime_x 1s linear infinite;
+}
+.circle:nth-child(3){
+    width: 40px;
+    height: 40px;
+    
+}
+.circle:nth-child(4){
+    width: 10px;
+    height: 10px;
+    animation-delay: 0.1s;
+    border:2px solid #3C5795;
+}
+@keyframes anime{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+
+}
+@keyframes anime_x{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform:translate(-50%,-50%) rotate(-360deg);
+    }
+
+}
+.all{
+    display: none;
+}
+.container-circle{
+    display: none;
+}
 .start-begin{
     width: 100%;
     height: 100%;
@@ -459,8 +524,20 @@ h1{
         transition: .5s;
     }
     .about .about_me .box_b:nth-child(2) .box_about{
-        
+        position: relative;
         transition: 0.8s;
+    
+    }
+    .about .about_me .box_b:nth-child(2) .box_about span{
+        position: absolute;
+        top: 95%;
+        right: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 3px;
+        background: #fff ;
+        border-radius: 10px;
+        animation: moving 2s linear infinite;
     }
     .about .about_me .box_b:nth-child(3) .box_about{
         
@@ -730,7 +807,108 @@ h1{
         height: 30px;
         left: 50%;
     }
-
+    
+    
+    /*skilles style*/    
+    .skilles{
+        width: 100%;
+        height: 100%;
+        margin: 10px auto;
+        padding: 10px 0;
+        background: #fff;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: none;
+        z-index: 999999999999;
+    }
+    .skilles h3{
+        margin: 10px;
+        margin-top: 20px;
+        font-family: b;
+        color: #c9c9c9;
+    }
+    .skilles li{
+        margin: 10px 10px;
+        list-style: none;
+    }
+    .skilles li p{
+        float: right;
+        font-size: 14px;
+        color: #b3b3b3;
+    }
+    .skilles button{
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%,-50%);
+         /* background: #3C5795;*/
+          color:#fff;
+          border: none;
+          outline: none;
+          border-radius: 50%;
+          z-index: 99999;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.8em;
+          overflow: hidden;
+      }
+    .skilles .button:hover{
+          background: #3C5795;
+          color: #c1c1c1;
+      }
+    .bar{
+        background: #cfcfcf;
+        display: block;
+        height: 5px;
+        border-radius: 3px;
+        overflow: hidden;
+        margin: 10px 0;
+    }
+    .bar span{
+        box-shadow: 1px 2px 20px rgba(0,0,0,0.7);
+        height: 5px;
+        float: left;
+        background: linear-gradient(20deg,#3C5795,#8840DD);
+        border-radius: 3px;
+    }
+    .html.anim{
+        width: 99%;
+        animation: html 2s;
+    }
+    .css.anim{
+        width: 95%;
+        animation: css 2.1s;
+    }
+    .js.anim{
+        width: 75%;
+        animation: js 2.2s;
+    }
+    .jquery.anim{
+        width: 65%;
+        animation: jquery 2.3s;
+    }
+    .react.anim{
+        width: 25%;
+        animation: react 2.4s;
+    }
+    .json.anim{
+        width: 15%;
+        animation: json 2.5s;
+    }
+    .php.anim{
+        width: 55%;
+        animation: php 2.6s;
+    }
+    .java.anim{
+        width: 75%;
+        animation: java 2.6s;
+    }
+    
 @media (max-width :500px){
     .start-begin{
         display: inline-block;
@@ -1586,3 +1764,89 @@ h1{
         opacity: 0;
     }
 }
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 10px rgba(60,87,149,0.4);
+    }
+    50%{
+        box-shadow: 0 0 25px rgba(60,87,149,0.7);
+    }
+    100%{
+        box-shadow: 0 0 100px rgba(60,87,149,1);
+    }
+}
+@keyframes moving{
+    0%{
+    transform: translateX(-100%);
+        }
+    100%{
+    transform: translateX(100%);
+    
+       }
+}
+
+@keyframes html{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 99%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes jquery{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes react{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 25%;
+    }
+}
+@keyframes json{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 15%;
+    }
+}
+@keyframes php{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 55%;
+    }
+}
+@keyframes java{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
