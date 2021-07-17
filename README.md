@@ -1,18 +1,18 @@
-# Amr-portfolio
-#My_Website<br>
-This website was created by<br>
-HTML<br>
-Pure CSS<br>
-JAVASCRIPT<br>
-JQUERY<br>
+
+Amr-portfolio
+
+#My_Website
+This website was created by
+HTML
+Pure CSS
+JAVASCRIPT
+JQUERY
 Bootstrap
-<br>
-<br>
-**The website is contains Animation.<br>
-**website ic contains typewritter jquery.<br>
 
-link of home page....
-https://3mrr2g2b.github.io/codehub/
+**The website is contains Animation.
+**website ic contains typewritter jquery.
 
-Screenshot : 
-![screenshot](https://i.imgur.com/OG2wB2F.png)
+link of home page.... https://3mrr2g2b.github.io/Amr-portfolio/
+
+Screenshot :￼
+
